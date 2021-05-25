@@ -1,3 +1,6 @@
+body{
+  background-color: black;
+}
 #cuerpo{
     width: 500px;
     height: 500px;
@@ -50,7 +53,7 @@
     left: 250px;
     top: 100px;
     animation:  ojo 4s linear infinite alternate paused;
-    animation:  estirada3 4s linear infinite alternate paused;
+    /*animation:  estirada3 4s linear infinite alternate paused;*/
   }
   
   #izquierda{
@@ -214,6 +217,7 @@
       height: 440px;
   }
 }
+/*
 @keyframes estirada3 {
   0%{
       left: 250px;
@@ -227,4 +231,4 @@
   100%{
       left: 310px;
   }
-}
+}*/
