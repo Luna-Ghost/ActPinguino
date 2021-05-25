@@ -36,6 +36,14 @@ body{
     background-color: white;
     border-radius: 100%;
   }
+
+  .parpado{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #00cc00;
+    background-color: #00cc00;
+    border-radius: 100%;
+  }
   
   .pupila{
     width: 40px;
@@ -55,12 +63,26 @@ body{
     animation:  ojo 4s linear infinite alternate paused;
     /*animation:  estirada3 4s linear infinite alternate paused;*/
   }
-  
   #izquierda{
     position: relative;
     left: 100px;
     top: 11px;
     animation: ojo2 4s linear infinite alternate paused;
+  }
+
+  #par1{
+    /*position: relative;*/
+    left: 250px;
+    top: 100px;
+    animation:  par1 4s linear infinite alternate paused;
+  }
+  
+  
+  #par2{
+    /*position: relative;*/
+    left: 100px;
+    top: 11px;
+    animation: par2 4s linear infinite alternate paused;
   }
   
   .boton{
@@ -169,6 +191,40 @@ body{
     }
   }
 
+  @keyframes par1 {
+    0%{
+      position: relative;
+      opacity: 0.0; 
+      
+      }
+    50%{
+      position: relative;
+      opacity: 1.0;
+    }
+    100%{
+      width: 100px;
+      height: 100px;
+      position: relative;
+      opacity: 0.0;
+    }
+  }
+  @keyframes par2 {
+    0%{
+      position: relative;
+      opacity: 0.0; 
+  }
+  50%{
+      position: relative;
+      opacity: 1.0; 
+  }
+  100%{
+      width: 100px;
+      height: 100px;
+      position: relative;
+      opacity: 0.0; 
+  }
+}
+
 @keyframes estirada {
   0%{
       width: 400px;
@@ -217,18 +273,3 @@ body{
       height: 440px;
   }
 }
-/*
-@keyframes estirada3 {
-  0%{
-      left: 250px;
-  }
-  50%{
-      left: 270px;
-  }
-  75%{
-      left: 290px;
-  }
-  100%{
-      left: 310px;
-  }
-}*/

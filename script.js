@@ -37,31 +37,56 @@ window.addEventListener("load", ()=>{
     }
     console.log(eye.style);
   })
+  boton3.addEventListener("click", ()=>{
+    var ojo = document.getElementById("par1");
+    if(ojo.style.animationPlayState == "running")
+    {
+      var ojo = document.getElementById("par1");
+      ojo.style.animationPlayState = "paused";
+      var ojo = document.getElementById("par2");
+      ojo.style.animationPlayState = "paused";
+    }
+    else
+    {
+      ojo.style.animationPlayState = "running";
+      var ojo = document.getElementById("par2");
+      ojo.style.animationPlayState = "running";
+    }
+  })
 
   var rojo = document.getElementById("rojo"); 
   var amarillo = document.getElementById("amarillo"); 
   var verde = document.getElementById("verde"); 
   var azul = document.getElementById("azul"); 
   var interior = document.getElementById("interior")
+  var parpado = document.getElementById("parpado")
 
   rojo.addEventListener("click", ()=>{
     interior.style.backgroundColor = "red";
     interior.style.borderColor = "red";
+    parpado.style.backgroundColor = "red";
+    parpado.style.borderColor = "red";
   })
 
   amarillo.addEventListener("click", ()=>{
     interior.style.backgroundColor = "yellow";
     interior.style.borderColor = "yellow";
+    parpado.style.backgroundColor = "yellow";
+    parpado.style.borderColor = "yellow";
   })
 
   verde.addEventListener("click", ()=>{
     interior.style.backgroundColor = "#00cc00";
     interior.style.borderColor = "#00cc00";
+    parpado.style.backgroundColor = "#00cc00";
+    parpado.style.borderColor = "#00cc00";
   })
 
   azul.addEventListener("click", ()=>{
     interior.style.backgroundColor = "blue";
     interior.style.borderColor = "blue";
+    parpado.style.backgroundColor = "blue";
+    parpado.style.borderColor = "blue";
   })
   
 })
