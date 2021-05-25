@@ -21,11 +21,20 @@ window.addEventListener("load", ()=>{
   })
   boton2.addEventListener("click", ()=>{
     var cuerpo = document.getElementById("interior")
-    cuerpo.style.animationPlayState = "running";
     var fondo = document.getElementById("cuerpo")
-    fondo.style.animationPlayState = "running";
-    var ojo1 = document.getElementById("derecha");
-    ojo1.style.animationPlayState = "running";
+    if(cuerpo.style.animationPlayState == "running")
+    {
+      var cuerpo = document.getElementById("interior");
+      cuerpo.style.animationPlayState = "paused";
+      var fondo = document.getElementById("cuerpo");
+      fondo.style.animationPlayState = "paused";
+    }
+    else
+    {
+      cuerpo.style.animationPlayState = "running";
+      var fondo = document.getElementById("cuerpo");
+      fondo.style.animationPlayState = "running";
+    }
     console.log(eye.style);
   })
 
