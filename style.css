@@ -110,6 +110,7 @@ body{
     top: -44px;
     border: 1px solid rgb(255, 166, 0);
     background-color: rgb(255, 166, 0);
+    color: black;
   }
   #rojo{
     background-color: red;
@@ -193,36 +194,47 @@ body{
 
   @keyframes par1 {
     0%{
-      position: relative;
-      opacity: 0.0; 
-      
-      }
+        position: relative;
+        left: -3px;
+        top: -44px;
+        opacity: 0.0; 
+    }
     50%{
-      position: relative;
-      opacity: 1.0;
+        position: relative;
+        left: -3px;
+        top: -44px;
+        opacity: 1.0; 
     }
     100%{
-      width: 100px;
-      height: 100px;
-      position: relative;
-      opacity: 0.0;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: -3px;
+        top: -44px;
+        opacity: 0.0; 
     }
   }
   @keyframes par2 {
     0%{
-      position: relative;
-      opacity: 0.0; 
-  }
-  50%{
-      position: relative;
-      opacity: 1.0; 
-  }
-  100%{
-      width: 100px;
-      height: 100px;
-      position: relative;
-      opacity: 0.0; 
-  }
+        position: relative;
+        left: -2px;
+        top: -44px;
+        opacity: 0.0; 
+    }
+    50%{
+        position: relative;
+        left: -2px;
+        top: -44px;
+        opacity: 1.0;
+    }
+    100%{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: -2px;
+        top: -44px;
+        opacity: 0.0;
+    }
 }
 
 @keyframes estirada {
