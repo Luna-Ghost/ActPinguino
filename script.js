@@ -59,34 +59,43 @@ window.addEventListener("load", ()=>{
   var verde = document.getElementById("verde"); 
   var azul = document.getElementById("azul"); 
   var interior = document.getElementById("interior")
-  var parpado = document.getElementById("parpado")
+  var par1 = document.getElementById("par1")
+  var par2 = document.getElementById("par2")
 
   rojo.addEventListener("click", ()=>{
     interior.style.backgroundColor = "red";
     interior.style.borderColor = "red";
-    parpado.style.backgroundColor = "red";
-    parpado.style.borderColor = "red";
+    par1.style.backgroundColor = "red";
+    par1.style.borderColor = "red";
+    par2.style.backgroundColor = "red";
+    par2.style.borderColor = "red";
   })
 
   amarillo.addEventListener("click", ()=>{
     interior.style.backgroundColor = "yellow";
     interior.style.borderColor = "yellow";
-    parpado.style.backgroundColor = "yellow";
-    parpado.style.borderColor = "yellow";
+    par1.style.backgroundColor = "yellow";
+    par1.style.borderColor = "yellow";
+    par2.style.backgroundColor = "yellow";
+    par2.style.borderColor = "yellow";
   })
 
   verde.addEventListener("click", ()=>{
     interior.style.backgroundColor = "#00cc00";
     interior.style.borderColor = "#00cc00";
-    parpado.style.backgroundColor = "#00cc00";
-    parpado.style.borderColor = "#00cc00";
+    par1.style.backgroundColor = "#00cc00";
+    par1.style.borderColor = "#00cc00";
+    par2.style.backgroundColor = "#00cc00";
+    par2.style.borderColor = "#00cc00";
   })
 
   azul.addEventListener("click", ()=>{
     interior.style.backgroundColor = "blue";
     interior.style.borderColor = "blue";
-    parpado.style.backgroundColor = "blue";
-    parpado.style.borderColor = "blue";
+    par1.style.backgroundColor = "blue";
+    par1.style.borderColor = "blue";
+    par2.style.backgroundColor = "blue";
+    par2.style.borderColor = "blue";
   })
   
 })
